@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<title>Document</title>
+	<style>
+		body {
+			font-family: 'Lora', serif; 
+		}
+		#span1 {
+			color: red;
+			text-decoration: underline;
+		}		
+		.conteiner {
+			background-color: black;
+			color: white;
+			padding: 20px;
+		}
+		h2 {
+			color: red;
+		}
+		.content {
+			font-size: 0.8em;
+		}
+		.conteiner {
+			font-size: 0.8em;
+		}		
+		h1 {
+     	position: relative;
+     	margin-bottom: 0;
+     	color: red;
+		}
+		h1:after {
+    	display: block;
+    	width:100%;
+   		 content: '';
+    	position: absolute;
+    	border-bottom: 1px solid red;
+    	top:50%;                         
+    	left: 410px;
+    	}
+	</style>
+</head>
+<body>	
+	<h1>The Path to Enlightenment</h1>
+	<div class="content">
+		<i>These instructions are for *nix platforms. We also have <span id="span1">Windows instructions</span></i>.
+	</div>
+	<p>You can run the tests by calling the path_to_enlightenment.rb file.</p>
+	<p>In your terminal, while in the ruby_koans directory, type:</p>
+	<div class="conteiner">
+		[ ruby_koans ] $ ruby path_to_enlightement.rb
+	</div>
+	<h2>Red, Green, Refactor</h2>
+	<p>In test-driven development (TDD) the mantra has always been red: write a failing test and run it, green: make the test pass, and refactor: look at the code and see if you can make it any better.</p>
+</body>
+</html>
