@@ -1,0 +1,66 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 9pt;
+}
+.global {
+	width: 600px;
+}
+.plan {
+	background-color: #F1EECB;
+	font-weight: 900;
+	padding: 3px;	
+	border-top: 2px solid /*#F1EECB*/;
+}
+.orange1, .orange2, .orange3 {
+	color: white;
+	background-color: #F26F20;
+	padding: 3px;
+	/*float: left;*/
+	display: inline-block;
+}
+.orange1 {	
+	width: 120px;
+	margin-right: 0px;
+}
+.orange2 {
+	width: 360px;
+	margin: 0 -2px 0 -2px;
+}
+.orange3 {	
+	width: 90px;
+}
+.lek {	
+	border: 1px solid;
+	/*margin: 0; */
+	/*padding: 20px 5px 0;	*/
+	/*display: inline-block;	*/
+	/*float-left;*/
+	width: 115px;
+	/*height: 100px;*/
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*top: 0;*/
+}
+.content {
+	border: 1px solid red;
+	/*margin: 0; */
+	/*float: left;*/
+	width: 300px;
+	/*height: 100px;*/
+	/*padding: 5px;*/
+	/*width: 500px;*/
+	/*display: inline-block;*/
+}
+.h3 {
+	/*border: 1px solid;*/
+	/*padding-bottom: 10px;*/
+	/*margin: 0;*/
+}
+.mid {
+	/*position: relative;*/
+	/*margin: 5px 0;*/
+	border: 1px solid blue;
+}
+p {
+	margin: 3px;
+}
