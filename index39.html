@@ -14,18 +14,50 @@
 			background-color: #203257;
 			font-weight: 900;
 			padding: 5px 20px;
-			width: 500px;
+			width: 470px;
+			position: relative;
 		}
 		#div2 {
 			background-color: #EBEBEB;
-			width: 525px;
+			width: 495px;
 			padding: 15px;
+			position: relative;
+		}
+		#grey1, #grey2 {
+			background-color: #D4D3DB;
+		}
+		#grey1 {
+			height: 100%;
+			width: 60px;
+			position: absolute;
+			top: 0;
+			right: 90px;
+			transform: skew(-10deg);
+		}
+		#grey2 {
+			height: 100%;
+			width: 25px;
+			position: absolute;
+			top: 0;
+			right: 50px;
+			transform: skew(-10deg);
+		}
+		#hidden {
+			height: 100%;
+			width: 140px;
+			position: absolute;
+			top: 0;
+			right: 30px;
+			transform: skew(-10deg);
+			background-color: #EBEBEB;
 		}
 	</style>
 </head>
 <body>
 	<div id="div2">
-		<div id="div1">АКЦЕНТЫ</div>
+		<div id="div1">АКЦЕНТЫ <div id="hidden"></div></div>
+		<div id="grey1"></div>
+		<div id="grey2"></div>
 	</div>
 </body>
 </html>
