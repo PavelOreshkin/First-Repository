@@ -1,0 +1,26 @@
+body {
+	font-family: 'Roboto', sans-serif;			
+}
+h2 {
+	margin-bottom: 10px;
+}
+.grey {
+	background-color: #7E7E7E;
+	color: white;
+	font-weight: 900;
+	text-decoration: none;
+	padding: 1px 5px;
+	margin: 4px;
+	font-size: 0.7em;
+}
+#line {
+	font-size: 0.7em;
+	color: #656565;
+	margin-bottom: 5px;	
+	position: relative;
+}
+.global {
+	border-left: 10px solid #BBBBBB;
+	padding-left: 15px;
+	height: 300px;
+}
