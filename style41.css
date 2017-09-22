@@ -1,5 +1,6 @@
 body {
-	font-family: 'Roboto', sans-serif;			
+	font-family: 'Roboto', sans-serif;	
+	width: 700px;		
 }
 h2 {
 	margin-bottom: 10px;
@@ -23,4 +24,19 @@ h2 {
 	border-left: 10px solid #BBBBBB;
 	padding-left: 15px;
 	height: 300px;
+}
+p {
+	font-size: 0.8em;
+}
+#read_next {
+	text-decoration: none;
+	font-weight: 900;
+	color: #4B76A6;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: 15px;
+}
+.content {
+	height: 215px;
+	position: relative;
 }
