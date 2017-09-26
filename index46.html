@@ -5,35 +5,65 @@
 	<title>index46</title>
 	<style>
 		#global {
-			padding: 0 20px;
-			border-left: 20px solid black;
-			border-right: 10px solid black;
-			width: 580px;
+			padding: 0 20px 0 30px;
+			border-left: 13px solid #D3D3D3;
+			width: 620px;
 		}
 		a {
 			color: white;
 			font-weight: bold;
 			text-decoration: none;
 			font-size: 0.7em;
-			padding: 15px;
+			padding: 15px 20px;
 		}
 		.button {
 			background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(21,173,219,1) 48%, rgba(7,74,97,1) 99%, rgba(183,222,237,1) 100%);
 			display: inline-block;
 			border-radius: 5px;
+			margin-right: 15px;
 		}
 		caption {
+			font-size: 0.9em;
+			margin: 15px 0;
 			font-weight: bold;
 			color: #074F87;
+			text-align: left;
+		}
+		th {
+			text-align: left;
+			border-top: 4px solid #B8B8B8;
+			border-bottom: 1px solid #B8B8B8;
+			padding: 10px 5px;
+			background-color: #EBEBEB;
+		}
+		td {
+			text-align: center;
+			padding: 10px 0;
+			font-size: 0.9em;
+		}
+		table {
+			border-collapse: collapse;
+			width: 580px;
+			margin-bottom: 15px;
+		}
+		#right {
+			background: linear-gradient(to right, rgba(0,0,0,0.38) 0%,rgba(0,0,0,0.38) 1%,rgba(0,0,0,0) 100%);
+			width: 15px;
+			height: 410px;
+			padding: 0;
+			margin: 0;
+			float: right;
 		}
 	</style>
 </head>
 <body>
+	
 	<div id="global">
+	<div id="right"></div>	
 		<table>
 			<caption>РАСПИСАНИЕ</caption>
 			<tr>
-				<th>Физика / Химия</th>
+				<th colspan="2" style="background-color: #D9FBFE;">Физика / Химия</th>
 			</tr>
 			<tr>
 				<td>06 декабря (сб - 10.00)</td>
@@ -44,7 +74,7 @@
 				<td>Осталось 136 мест</td>
 			</tr>
 			<tr>
-			<th>Все предметы</th>
+				<th colspan="2">Все предметы</th>
 			</tr>
 			<tr>
 				<td>13 декабря (сб - 10:00)</td>
