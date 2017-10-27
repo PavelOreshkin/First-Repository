@@ -2,18 +2,77 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title>index 70</title>
 	<style>
-		div {
+		body {
+			font-family: 'Roboto', sans-serif;	
+		}
+		.content {
+			box-sizing: border-box;
+			width: 464px;
+			height: 128px;
+			background-color: #fec958;
+			padding: 33px 0 0 30px;
+			font-size: 24px;
+		}
+		.arrow {
 			width: 0;
 			height: 0;
-			border-left: 5px solid #54595f;
-			border-top:  7px solid transparent; 
-			border-bottom: 7px solid transparent; 
+			border-top: 13px solid #fec958;
+			border-left: 14px solid transparent; 
+			border-right: 14px solid transparent; 
+			transform: translateX(410px);
+		}
+		.tumbler {
+			display: inline-block;
+			transform: translateX(345px);
+			margin-top: 2px;
+		}
+		.plus {
+			display: inline-block;
+		}
+		.minus {
+			display: inline-block;
+		}
+		.plus a {
+			text-decoration: none;
+			background-color: #d2d2d2;
+			font-size: 25px;
+			color: white;
+			padding: 0 8px 5px 8px;
+			font-weight: bold;
+			border-top-left-radius: 7px;
+			border-bottom-left-radius: 7px;
+			display: inline-block;
+			box-shadow: inset 0 0 4px #8C8C8C;
+		}
+		.minus a {
+			text-decoration: none;
+			background-color: #e33330;
+			font-size: 25px;
+			color: white;
+			padding: 0 8px 5px 8px;
+			font-weight: bold;
+			border-top-right-radius: 7px;
+			border-bottom-right-radius: 7px;			
+		}
+		.middle {
+			display: inline-block;
+			color: #A2A2A2;
+			font-size: 25px;
+			font-weight: bold;
+			padding: 0 5px;			
 		}
 	</style>
 </head>
 <body>
-	<div></div>
+	<div class="content">Зарегистрируйтесь, чтобы иметь возможность голосовать</div>
+	<div class="arrow"></div>
+		<div class="tumbler">
+			<div class="plus"><a href="#">+</a></div>
+			<div class="middle">0</div>
+			<div class="minus"><a href="#">–</a></div>
+		</div>
 </body>
 </html>
