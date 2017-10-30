@@ -8,28 +8,11 @@
 		body {
 			font-family: 'Roboto', sans-serif;	
 		}
-		.content {
-			box-sizing: border-box;
-			width: 464px;
-			height: 128px;
-			background-color: #fec958;
-			padding: 33px 0 0 30px;
-			font-size: 24px;
-			visibility: hidden;
-		}
-		.arrow {
-			width: 0;
-			height: 0;
-			border-top: 13px solid #fec958;
-			border-left: 14px solid transparent; 
-			border-right: 14px solid transparent; 
-			transform: translateX(410px);
-			visibility: hidden;
-			
-		}
 		.tumbler {
+			position: relative;
 			display: inline-block;
-			transform: translateX(345px);
+			top: 141px;
+			left: 345px;
 			margin-top: 2px;
 		}
 		.plus {
@@ -64,9 +47,6 @@
 			background-color: #2064EF;
 			box-shadow: none;		
 		}
-		.plus a:hover .content {
-			visibility: visible;
-		}
 		.minus a:hover {
 			background-color: #e33330;
 			box-shadow: none;
@@ -76,17 +56,54 @@
 			color: #A2A2A2;
 			font-size: 25px;
 			font-weight: bold;
-			padding: 0 5px;			
+			padding: 0 5px;	
+		}
+		.content {
+			display: none;
+			position: absolute;
+			bottom: 45px;
+			left: -345px;
+			box-sizing: border-box;
+			width: 464px;
+			height: 128px;
+			background-color: #fec958;
+			padding: 33px 0 0 30px;
+			font-size: 24px;
+		}
+		.arrow {
+			display: none;
+			position: absolute;
+			top: -15px;
+			left: 2px;
+			width: 0;
+			height: 0;
+			border-top: 13px solid #fec958;
+			border-left: 14px solid transparent; 
+			border-right: 14px solid transparent;
+		}
+		.plus:hover .content, .plus:hover .arrow {
+			display: block;
+		}
+		.minus:hover .content {
+			display: block;
+		}
+		.minus:hover .arrow {
+			display: block;
+			transform: translateX(62px);
 		}
 	</style>
 </head>
 <body>
-	<div class="content">Зарегистрируйтесь, чтобы иметь возможность голосовать</div>
-	<div class="arrow"></div>
-		<div class="tumbler">
-			<div class="plus"><a href="#">+</a></div>
-			<div class="middle">0</div>
-			<div class="minus"><a href="#">–</a></div>
+	<div class="tumbler">
+		<div class="plus">
+			<div class="content">Зарегистрируйтесь, чтобы иметь возможность голосовать</div><div class="arrow"></div><a href="#">+</a>
 		</div>
+		
+		<div class="middle">0</div>
+		
+		<div class="minus">
+			<div class="content">Зарегистрируйтесь, чтобы иметь возможность голосовать</div><div class="arrow"></div><a href="#">–</a>
+		</div>
+	</div>
 </body>
 </html>
