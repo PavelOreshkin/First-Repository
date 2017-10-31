@@ -3,18 +3,116 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>index 71</title>
 	<style>
 		body {
 			font-family: 'Roboto', sans-serif;	
 		}
+		.all {
+			border-left: 3px solid black;
+			border-right: 3px solid black;
+			width: 850px;
+		}
+		.head {
+			background-color: #db6655;
+			color: #F7EDE0;
+			font-weight: bold;
+			font-size: 13px;
+			padding: 20px;
+		}
+		.content {
+			background-color: #ede1d1;
+		}
+		.content-head {
+			margin: 0;
+			padding: 30px 0 20px 30px;
+			font-size: 24px;
+			color: #7C7C7C;
+		}
+		.contetn-box {
+			height: 110px;			
+			margin: 0;
+		}
+		.contetn-box img{
+			float: left;
+			padding: 15px;
+		}
+		.first-column {
+			display: inline-block;
+			/*float: left;*/
+			width: 395px;
+			margin-left: 15px;
+		}
+		.second-column {
+			display: inline-block;
+			/*float: left;*/
+			width: 435px;
+		}
+		.p-first{
+			margin: 0;
+			padding-top: 38px;
+			font-size: 14px;
+			color: #484848;
+		}
+		.p-second{
+			margin: 0;
+			font-size: 15px;
+			color: #D87721;
+		}
+		.p-second span {
+			font-weight: bolder;
+		}
+		.head a {
+			color: #EC8D7F;
+			position: absolute;
+			transform: translate(695px,-5px);
+			text-shadow: -0.1px -0.55px 0.5px #666666;
+		}	
 	</style>
 </head>
 <body>
-	
+	<div class="all">
+		<div class="head">ОПЛАТА УСЛУГ <a href="#"><i class="material-icons">&#xe14c;</i></a></div>
+		<div class="content">
+			<p class="content-head">Мгновенная оплата</p>
+			
+			<div class="first-column">
+				<div class="contetn-box">
+					<img src="index71-1.png" alt="img">
+					<p class="p-first">Яндекс.Деньги</p>
+					<p class="p-second"><span>0%</span> комиссия</p>
+				</div>
+				<div class="contetn-box">
+					<img src="index71-2.png" alt="img">
+					<p class="p-first">Webmoney</p>
+					<p class="p-second"><span>0.8%</span> комиссия</p>
+				</div>
+				<div class="contetn-box">
+					<img src="index71-3.png" alt="img">
+					<p class="p-first">Карты Visa, Mastercard <br>(процессинг Uniteller)</p>
+					<p class="p-second"><span>0%</span> комиссия</p>
+				</div>
+			</div>
+
+			<div class="second-column">
+				<div class="contetn-box">
+					<img src="index71-4.png" alt="img">
+					<p class="p-first">Элекснет</p>
+					<p class="p-second"><span>0%</span> комиссия</p>
+				</div>
+				<div style="background-color: #faf4e6;" class="contetn-box">
+					<img src="index71-5.png" alt="img">
+					<p class="p-first">Qiwi</p>
+					<p class="p-second"><span>до 10%</span> комиссия</p>
+				</div>
+				<div class="contetn-box">
+					<img src="index71-6.png" alt="img">
+					<p class="p-first">Новоплат</p>
+					<p class="p-second"><span>до 4%</span> комиссия</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
-
-<!-- #db6655 оплата услуг -->
-<!-- #ede1d1 фон -->
-<!-- #faf4e6 выделение способа оплаты -->
