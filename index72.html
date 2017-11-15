@@ -9,28 +9,28 @@
 			color: #4D3B3B;
 		}
 		table {
+			position: relative;
 			background-color: #fbfbef;
 			border-collapse: collapse;
 			width: 850px;
-			text-align: top;
-		}
-		tr {
-			border: 1px solid;
+			z-index: 0;
 		}
 		td:nth-child(2) {
 			background-color: #faf4e6;
 			}
 		td {
 			padding: 25px 0 25px 40px;
+			vertical-align: top;
 		}
 		p {
 			margin: 0;
 		}
 		.head {
-			font-size: 35px;
+			font-size: 33px;
 		}
 		.money {
 			color: #db6c58;
+			margin-top: 25px;
 		}
 		.button {
 			background-color: #4d3b3b;
@@ -45,6 +45,22 @@
 			text-align: center;
 			padding: 13px;
 			border-radius: 20px/30px;
+			margin-top: 22px;
+		}
+		.letter-spacing {
+			letter-spacing: 10px;
+		}		
+		.line1 {
+			display: inline-block;			
+			width: 805px;			
+			border-bottom: 1px solid #e7e7db;
+			position: absolute;
+		}
+		.line2 {
+			display: inline-block;			
+			width: 805px;			
+			border-bottom: 1px solid #FFFEF2;
+			position: absolute;
 		}
 	</style>
 </head>
@@ -58,14 +74,14 @@
 		</tr>
 		<tr>
 			<td>
-				<p><b>2</b> Gb места</p>
-				<p><b>2</b> сайта / ftp акк.</p>
-				<p><b>2</b> базы данных</p>
+				<p><b><span class="letter-spacing">2</span></b> Gb места</p>
+				<p><b><span class="letter-spacing">2</span></b> сайта / ftp акк.</p>
+				<p><b><span class="letter-spacing">2</span></b> базы данных</p>
 			</td>		
 			<td>
-				<p><b>4</b> Gb места</p>
-				<p><b>5</b> сайтов / ftp акк.</p>
-				<p><b>5</b> баз данных</p>
+				<p><b><span class="letter-spacing">4</span></b> Gb места</p>
+				<p><b><span class="letter-spacing">5</span></b> сайтов / ftp акк.</p>
+				<p><b><span class="letter-spacing">5</span></b> баз данных</p>
 			</td>
 			<td>
 				<p><b>6.4</b>Gb места</p>
@@ -108,13 +124,15 @@
 				<a href="#" class="button">РАЗМЕСТИТЬ САЙТ</a>
 			</td>
 		</tr>
-	</table>
+	</table>	
+	<div style="top:82px; left:20px;" class="line1"></div>
+	<div style="top:186px; left:20px;" class="line1"></div>
+	<div style="top:326px; left:20px;" class="line1"></div>
+	<div style="top:448px; left:20px;" class="line1"></div>
+
+	<div style="top:83px; left:20px;" class="line2"></div>
+	<div style="top:187px; left:20px;" class="line2"></div>
+	<div style="top:327px; left:20px;" class="line2"></div>
+	<div style="top:449px; left:20px;" class="line2"></div>
 </body>
 </html>
-
-<!-- #4d3b3b цвет обычной кнопки
-#faf4e6 цвет Оптимо
-#db6c58 цвет кнопки в оптимо -->
-
-<!-- border-top: 1px solid #FFFEF2;
-border-bottom: 1px solid #e7e7db; -->
