@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>index 77</title>
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;	
+		}
+		h1 {
+			font-size: 43px;
+			color: #474747;
+			margin-bottom: 15px;
+		}
+		form {
+			height: 240px;
+			width: 550px;
+			box-sizing: border-box;
+			background-color: #f0f0f0;
+			padding: 20px;
+		}		
+		.zona {
+			height: 30px;
+			width: 285px;
+			border-radius: 3px;
+			border: 1px solid #DEDEDE;
+			position: relative;
+			right: -70px;
+		}
+		p {
+			font-size: 12px;
+		}
+		#checkBox {
+			position: relative;
+			left: 202px;
+			border: none;
+			background-color: white;
+			height: 20px;
+			width: 20px;
+		}
+		.saveme{
+			display: inline-block;
+			position: relative;
+			left: 200px;
+			bottom: 5px;
+		}
+		.foget {
+			position: relative;
+			left: 258px;
+			bottom: 5px;
+			font-size: 14px;
+			color: #4AA3CD;
+		}
+		.button {
+			color: white;
+			background-color: #6eb825;
+			border: none;
+			padding: 13px 75px;
+			border-radius: 2px;
+			font-weight: bolder;
+			font-size: 14px;
+			box-shadow: 0 1px 1px #7A7A7A;
+			position: relative;
+			left: 155px;
+		}
+	</style>
+</head>
+<body>
+	<div><h1>Вход в личный кабинет</h1></div>
+	<div>
+		<form action="/action_page.php"> 
+			<p>Ваш e-mail или телефон <input class="zona" type="text" name="e-mail"></p>
+			<p>Ваш пароль <input  style="right: -136px;" class="zona" type="text" name="pass"></p>
+			<input id="checkBox" type="checkbox">
+			<p class="saveme">Запомнить меня</p>
+			<a class="foget" href="#">Забыли пароль?</a>			
+			<p><input class="button" type="submit" value="ВОЙТИ"></p>			
+		</form> 
+	</div>
+</body>
+</html>
