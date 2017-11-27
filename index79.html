@@ -3,16 +3,91 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title>index 79</title>
 	<style>
 		body {
-			font-family: 'Roboto', sans-serif;	
-			
+			font-family: 'Roboto', sans-serif;
+			background-color: black;			
+		}
+		.global {
+			box-sizing: border-box;
+			display: inline-block;
+			height: 395px;
+			width: 560px;
+			border-radius: 5px;
+			background-color: white;
+		}
+		.level_1 p {
+			font-weight: bold;
+			font-size: 19px;
+			margin: 7px 15px;
+			display: inline-block;
+		}
+		.escape {
+			display: inline-block;
+			height: 20px;
+			width: 23px;
+			border: 1px solid #D2D2D2;
+			border-radius: 3px;
+			position: relative;
+			left: 274px;
+		}
+		hr {
+			margin: 0 0 17px 0;
+			/*color: #4B58FE;*/
+		}
+		.img {
+			display: inline-block;
+			margin-left: 11px;
+		}
+		.img:last-child {
+			display: inline-block;
+			margin-left: 3px;
+		}
+		.level_2 p {
+			font-weight: bold;
+			font-size: 14px;
+			margin: 9px 15px;
+		}
+		.zona {
+			border-radius: 3px;
+			border: 1px solid black;
+			height: 25px;
+			width: 217px;
+			margin-left: 15px;
 		}
 	</style>
 </head>
 <body>
-	
+	<div class="global">
+		<div class="level_1">
+			<p>Регистрация Шаг 1 из 2</p>
+			<div class="escape"><i class="fa fa-times" style="font-size:15px;text-align: center; color: #B4B4B4; padding: 0; transform: translateX(5px);"></i></div>
+			<hr>
+		</div>
+		<div class="level_2">
+			<p>Имя</p>
+			<input type="text" class="zona" name="name">
+			<input type="submit" class="button_1" value="Проверка">
+			<p>Страна</p>
+			<input type="text" class="zona" name="country" placeholder="Выберите нужный вариант">
+			<p>пол</p>
+			<div class="img">
+				<img src="index79-1.png" alt="male"><br>
+				<input style="transform: translateX(30px);" type="radio" name="radio">
+			</div>
+			<div class="img">
+				<img src="index79-2.png" alt="female"><br>
+				<input style="transform: translateX(30px);" type="radio" name="radio">
+			</div>						
+		</div>
+		<hr style="margin: 15px 0 12px 0;">
+		<div class="level_3">
+			<input type="submit" class="button_2" value="Отменить">
+			<input type="submit" class="button_3" value="Далее">
+		</div>
+	</div>
 </body>
 </html>
 
@@ -26,4 +101,4 @@
 <!-- #e7e7e7 низ отменить -->
 
 
-#f5f5f5 низ
+<!-- #f5f5f5 низ -->
