@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>index 83</title>
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;	
+			background-color: #eeeeee;
+		}
+		.global-left {
+			background-color: #E33E3E;
+			display: inline-block;
+			position: relative;
+			top: 15px;
+			left: 5px;
+		}
+		.top{
+			background-color: #b5eaee;
+			width: 230px;
+			height: 33px;
+		}
+		.middle {
+			background-color: #4dd0e2;
+			width: 230px;
+			height: 67px;
+		}
+		.bottom {
+			background-color: #00acc2;
+			width: 230px;
+			height: 103px;
+		}
+		.left {
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			box-sizing: border-box;
+			border-top: 203px solid #eeeeee;
+			border-right: 115px solid transparent;
+			height: 0;
+			width: 0;
+		}
+		.right {
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			right: 0;
+			box-sizing: border-box;
+			border-top: 203px solid #eeeeee;
+			border-left: 115px solid transparent;
+			height: 0;
+			width: 0;
+		}
+		.global-right {
+			display: inline-block;
+			position: absolute;
+			left: 404px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.global-middle {
+			display: inline-block;
+		}
+		.line {
+			position: relative;
+			border-bottom: 1px solid #aa3f83;
+			height: 0;
+			width: 266px;
+			z-index: 4;
+			top: 50%;
+			left: 50%;
+			box-shadow: 0 0 1px #ffc2f9;
+		}
+	</style>
+</head>
+<body>
+	<div class="global-left">
+		<div class="top"><div class="line"></div></div>
+		<div class="middle"><div class="line"></div></div>
+		<div class="bottom"><div class="line"></div></div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	<div class="global-right">
+		<p style="margin-top: 25px;">Floating action button</p>
+		<p style="margin-top: 33px;">Raised button</p>
+		<p style="margin-top: 66px;">Flat button</p>
+	</div>
+</body>
+</html>
