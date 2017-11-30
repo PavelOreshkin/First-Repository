@@ -18,6 +18,10 @@
 			border-radius: 5px;
 			background-color: white;
 		}
+		.level_1 {			
+			border-bottom: 1px solid #eeeeee;
+			margin-bottom: 18px;
+		}
 		.level_1 p {
 			font-weight: bold;
 			font-size: 19px;
@@ -32,10 +36,7 @@
 			border-radius: 3px;
 			position: relative;
 			left: 274px;
-		}
-		hr {
-			margin: 0 0 17px 0;
-			/*color: #4B58FE;*/
+			background: linear-gradient(to bottom, rgba(252,251,249,1) 0%,rgba(231,231,231,1) 100%);
 		}
 		.img {
 			display: inline-block;
@@ -51,11 +52,53 @@
 			margin: 9px 15px;
 		}
 		.zona {
+			box-sizing: border-box;
 			border-radius: 3px;
-			border: 1px solid black;
-			height: 25px;
+			border: 1px solid #D8D8D8;
+			height: 28px;
 			width: 217px;
 			margin-left: 15px;
+			padding-left: 7px;
+		}
+		.button_1 {
+			border-radius: 3px;
+			height: 28px;
+			border: 1px solid #478FA6;
+			margin-left: 10px;
+			color: white;
+			background: linear-gradient(to bottom, rgba(85,184,216,1) 0%,rgba(85,184,216,1) 1%,rgba(45,155,182,1) 100%);
+		}
+		.button_2 {
+			border-radius: 3px;
+			height: 28px;
+			width: 82px;
+			border: 1px solid #CCCCCC;
+			background: linear-gradient(to bottom, rgba(252,251,249,1) 0%,rgba(231,231,231,1) 100%);
+			margin-left: 20px;
+		}
+		.button_3 {
+			border-radius: 3px;
+			height: 28px;			
+			border: 1px solid #3E91B7;
+			background: linear-gradient(to bottom, rgba(3,163,213,1) 0%,rgba(0,149,217,1) 100%);
+			color: white;
+			width: 60px;
+			position: relative;
+			left: 375px;
+		}
+		.level_3 {
+			margin-top: 15px;
+			border-top: 1px solid #D4D4D4;
+			box-sizing: border-box;
+			background-color: #f5f5f5;
+			height: 55px;
+			padding-top: 13px;
+		}
+		select {
+			height: 26px;
+			width: 20px;
+			background: linear-gradient(to bottom, rgba(252,251,249,1) 0%,rgba(231,231,231,1) 100%);
+			transform: translateX(-25px);
 		}
 	</style>
 </head>
@@ -64,14 +107,13 @@
 		<div class="level_1">
 			<p>Регистрация Шаг 1 из 2</p>
 			<div class="escape"><i class="fa fa-times" style="font-size:15px;text-align: center; color: #B4B4B4; padding: 0; transform: translateX(5px);"></i></div>
-			<hr>
 		</div>
 		<div class="level_2">
 			<p>Имя</p>
 			<input type="text" class="zona" name="name">
 			<input type="submit" class="button_1" value="Проверка">
 			<p>Страна</p>
-			<input type="text" class="zona" name="country" placeholder="Выберите нужный вариант">
+			<input type="text" class="zona" name="country" placeholder="Выберите нужный вариант"> <select name="select"></select>
 			<p>пол</p>
 			<div class="img">
 				<img src="index79-1.png" alt="male"><br>
@@ -82,7 +124,6 @@
 				<input style="transform: translateX(30px);" type="radio" name="radio">
 			</div>						
 		</div>
-		<hr style="margin: 15px 0 12px 0;">
 		<div class="level_3">
 			<input type="submit" class="button_2" value="Отменить">
 			<input type="submit" class="button_3" value="Далее">
@@ -90,16 +131,3 @@
 	</div>
 </body>
 </html>
-
-
-<!-- #55b8d8 верх проверка -->
-<!-- #2d9bb6 верх проверка -->
-
-<!-- #03a3d5 верх далее -->
-<!-- #0095d9 низ далее -->
-
-<!-- #fcfbf9 верх отменить -->
-<!-- #e7e7e7 низ отменить -->
-
-
-<!-- #f5f5f5 низ -->
