@@ -13,7 +13,6 @@
 		.global {
 			position: relative;
 			box-sizing: border-box;
-			/*height: 285px;*/
 			width: 457px;
 			background-color: #e3e3e1;
 			padding: 20px 38px;
@@ -25,16 +24,30 @@
 			height: 60px;
 			font-size: 25px;
 			padding: 15px 10px;
-			margin-bottom: 25px;			
+			margin-bottom: 23px;			
 		}
-		.left_column {
+		.left_top_column {
 			display: inline-block;
 			width: 180px;
+			margin-bottom: 22px;
+			float: left;
 		}
-		.right_column {
+		.right_top_column {
 			display: inline-block;
-			position: absolute;
-			right: 38px;
+			position: relative;
+			right: -20px;
+			width: 180px;
+			margin-bottom: 22px;
+		}
+		.left_bottom_column {
+			display: inline-block;
+			width: 180px;
+			float: left;
+		}
+		.right_bottom_column {
+			display: inline-block;
+			position: relative;
+			right: -20px;
 			width: 180px;
 		}
 		table {
@@ -72,13 +85,14 @@
 			color: white;
 			padding-left: 10px;
 			border-radius: 5px;
+			border-top: none;
 		}
 	</style>
 </head>
 <body>
 	<div class="global">
 		<div class="head"><span style="font-family: 'Fjalla One', sans-serif;">FONT FILTER</span></div>
-		<div class="left_column">
+		<div class="left_top_column">
 			<table>
 				<tr>
 					<th>LICENSES</th>
@@ -100,7 +114,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="right_column">
+		<div class="right_top_column">
 			<table>
 				<tr>
 					<th>TAGS</th>
@@ -109,7 +123,7 @@
 					<td class="check">Any</td>					
 				</tr>
 				<tr>
-					<td>4+ Styles</td>					
+					<td style="border-top: none;">4+ Styles</td>					
 				</tr>
 				<tr>
 					<td>8+ Styles</td>					
@@ -121,7 +135,42 @@
 					<td>Full Families <div style="display: inline-block; border-radius: 5px; background-color: #5b3f7a; color: #e3e3e1; width: 18px; height: 18px; text-align: center; position: absolute; right: 15px;">?</div> </td>					
 				</tr>
 			</table>
-		</div>		
+		</div>
+		<div class="left_bottom_column">
+			<table>
+				<tr>
+					<th>DOWNLOADS</th>
+				</tr>
+				<tr>
+					<td class="check">Show All</td>
+				</tr>
+				<tr>
+					<td style="border-top: none;">Local Only</td>
+				</tr>
+				<tr>
+					<td>Offsite Only</td>
+				</tr>				
+			</table>
+		</div>
+		<div class="right_bottom_column">
+			<table>
+				<tr>
+					<th>SORT BY</th>
+				</tr>
+				<tr>
+					<td class="check">Alphabetical</td>					
+				</tr>
+				<tr>
+					<td style="border-top: none;">Recent</td>					
+				</tr>
+				<tr>
+					<td>Popular</td>					
+				</tr>
+				<tr>
+					<td>Hot Today</td>					
+				</tr>
+			</table>
+		</div>
 	</div>
 </body>
 </html>
