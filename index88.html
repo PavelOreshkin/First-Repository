@@ -20,12 +20,14 @@
 			padding: 8px 0 0 20px;
 			text-shadow: 0 0 3px black;
 		}
-		/*.global:hover .list {
+		.global:hover .list {
 			display: inline-block;
-		}*/
+		}
+		.global:hover .strelka {
+			display: inline-block;
+		}		
 		.list {
-			display: inline-block;
-			/*display: none;*/			
+			display: none;
 			box-sizing: border-box;
 			width: 235px;
 			border: 2px solid #df061b;
@@ -48,12 +50,22 @@
 			padding: 8px 0 0 0;
 			font-size: 12px;
 		}
+		.strelka {
+			display: none;
+			position: absolute;
+			top: -10px;
+			left: 35px;
+			border-right: 15px solid transparent;
+			border-bottom: 10px solid white; 
+			border-left: 15px solid transparent; 
+		}
 	</style>
 </head>
 <body>
 	<div class="global">
 		Бытовая техника
 		<div class="list">
+			<div class="strelka"></div>
 			<ul>
 				<li><a href="#">Техника для дома</a></li>
 				<li><a href="#">Кухонная техника</a></li>
@@ -67,7 +79,3 @@
 	</div>
 </body>
 </html>
-
-<!-- #df061b светло красный -->
-<!-- #a70105 темно красный -->
-<!-- #2d6075 шрифт -->
